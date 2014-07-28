@@ -1,0 +1,5 @@
+Rails.application.config.assets.precompile += %w( base.css )
+Rails.application.config.assets.precompile += %w( skeleton.css )
+Rails.application.config.assets.precompile += %w( layout.css )
+Rails.application.config.assets.precompile += %w( application.js )
+Rails.application.config.assets.precompile += %w( salvattore.min.js)

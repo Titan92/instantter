@@ -1,0 +1,58 @@
+	<% if @landpage %>
+		<footer class="footer_landpage">
+				<div class="container">
+					<div class="eight columns">
+						<h4>Más información:</h4> 
+						<a class="title_h2" href="http://instantter.com/">Contacto</a> 
+						</ul>
+					</div>
+					<div class="eight columns">
+						<h4>Síguenos en las redes:</h4>
+						<a class="title_h2" href="http://twitter.com/">Twitter</a>
+						<a class="title_h2" href="http://facebook.com/">Facebook</a> 
+					</div>
+					<div class="sixteen columns">
+						<p class="center">Copyright Instantter 2014, todos los derechos reservados</p>
+						<p class="center">Consulta <a href="#" class="underline">política de privacidad</a> y <a href="#" class="underline">términos de uso</a></p>
+					</div>
+				</div>
+		</footer>
+
+		
+	<% else %>
+		<footer>
+			
+		</footer>
+		<div class="overlay_tuitear">
+			<div class="overlay_contenedor">
+		        <div class="nuevo_tweet">
+		        	<p>Publica un nuevo Tweet...</p>
+		        	<span class="close_tuitear">x</span>
+		        </div>
+		        <div class="form_tweet">
+		        	<textarea class="texttweet" rows="3" maxlength="200" onload="contarCaracteres()" onchange="contarCaracteres()" onkeyup="contarCaracteres()"></textarea>
+		        	<div class="botones_tweet_tablones">
+		        		<% botones_tablones %>
+		        		<% @tablones.each do |tablon| %> 
+                          <span class="btn border crimson">#<%=  tablon["hashtag"] %></span>  
+                        <% end %>
+		        	</div>
+		        	<a href="javascript:void(0;" class="btn right gray" id="bt_reset_tweet" >Borrar</a>
+		        	<a href="javascript:void(0);" class="btn right crimson" id="bt_send_tweet" disabled="">Twittear</a>
+		        	<span class="caracteres" style="color: rgb(119, 119, 119);">140</span>
+        			<div class="confirm_tweet"></div>
+        		</div>
+      	<div>
+            
+            
+
+<!-- End Document
+================================================== -->
+
+</div>
+		</div>
+	<% end %>
+
+	</div>	<!--#PAGE-->
+</body>
+</html>

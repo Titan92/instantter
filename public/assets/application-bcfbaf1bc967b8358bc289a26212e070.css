@@ -1,0 +1,1169 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Misc */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/* #Basic Styles
+================================================== */
+	
+	
+	body {
+		font: 15px/22px 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;
+		color: #444;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%; background: #E9E9E9;   }
+	header{    
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		padding-top: 6px;
+		padding-bottom: 4px; 
+		background: #333;
+		border-bottom: 3px solid #2A2A2A;
+		color: #fff;
+		position: fixed;
+		top:0;
+		z-index: 100;
+	}
+	header .columns { margin-top: 6px!important; margin-bottom: 3px!important; }
+	
+	footer { width: 100%;  padding-top: 30px;  }
+
+
+	
+	
+	
+	
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6, .title_h1, .title_h2 {
+		color: #181818;
+		font-family: 'Yanone Kaffeesatz', "Georgia", "Times New Roman", serif;
+		font-weight: normal; }
+	.title_h1, .title_h2 { display: block; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1, .title_h1 { font-size: 40px; line-height: 45px; margin-bottom: 5px; margin-top: 20px; }
+	h2, .title_h2 { font-size: 32px; line-height: 36px; margin-bottom: 10px; }
+	h3 { font-size: 28px; line-height: 32px; margin-bottom: 8px; }
+	h4 { font-size: 20px; line-height: 26px; margin-bottom: 4px; }
+	h5 { font-size: 16px; line-height: 20px; }
+	h6 { font-size: 14px; line-height: 21px; }
+	.subheader { color: #777; }
+	
+	span { display: block; }
+	p { margin: 0 0 20px 0; }
+	p img { margin: 0; }
+	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+	em { font-style: italic; }
+	strong { font-weight: bold; color: #333; }
+	small { font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+	.colorwhite { color:#fff; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: #444; text-decoration: none; outline: 0; }
+	a.underline { text-decoration: underline; }  
+	a.underline:hover { text-decoration: none; } 
+	a:hover, a:focus { color: #000; }
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none inside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square inside; }
+	ul.circle { list-style: circle inside; }
+	ul.disc { list-style: disc inside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+
+/* #Buttons
+================================================== */
+
+	.button,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+	  color: #444;
+	  display: inline-block;
+	  font-weight: bold;
+	  text-decoration: none;
+	  cursor: pointer;
+	  margin-bottom: 20px;
+	  line-height: normal;
+	  padding: 8px 10px;
+	  font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;  font-weight: normal;
+	   }
+
+	.button:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		
+    }
+
+	.button:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+		
+	}
+
+	.button.full-width,
+	button.full-width,
+	input[type="submit"].full-width,
+	input[type="reset"].full-width,
+	input[type="button"].full-width {
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; }
+
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+	}
+
+
+/* #Forms
+================================================== */
+	
+	.form_row_full { margin-bottom: 15px;  }
+	form {  margin-top:0px;   }
+
+	fieldset { margin-bottom: 20px; }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		width: 100%;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 10px 2%;
+		border: 1px solid #BBBBBB;
+		font-size: 15px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		color: #777;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff;
+		font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;  font-weight: normal; }
+	select { padding: 9px 2%; }
+
+
+	textarea { min-height: 60px; font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;  font-weight: normal; }
+	label, legend {
+		display: block;
+		font-weight: bold;
+		font-size: 15px; text-shadow:none; margin-bottom: 5px;   }
+	select {  }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		 }
+
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+	.nomargin { margin:0!important; }
+	.nopadding { padding:0!important; }
+	.center { text-align: center; margin: 0 auto; }
+	.invisible { visibility: hidden; }
+  	
+	img.percent90 { max-width: 90%; margin-left: 5%; }
+	
+	
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+/* #Custom Styles
+================================================== */
+	/*Header*/
+
+.animar, .animar *, a { transition: all 0.2s linear; }
+#page:not(.landpage) { padding-top: 58px; } 
+#page:not(.landpage) {  }
+
+.logo_cont { width: auto;
+display: inline-block;
+float: left;  margin-left: 10px; }
+#logo{  
+	font-size: 35px;
+	text-decoration: none;
+	color: #FFF;
+	line-height: 45px; font-family: 'Yanone Kaffeesatz', "Georgia", "Times New Roman", serif; letter-spacing: 1px; }
+#logo:hover { color: #d22042; }
+.gatillo_menu { display: none; }
+.close_menu { display: none; }
+nav{  font-size: 14px; text-decoration: none;  color:#333; font-family: 'Yanone Kaffeesatz', "Georgia", "Times New Roman", serif;  }
+	nav ul{ margin:0; margin-top: 0px;  }
+		nav ul li{ margin:3px;   float: left;  text-align: center;   display: block;   }
+		
+		nav ul li.active{      }
+		.active a, .active a:hover {   }
+		
+		nav ul li a, nav ul li a:visited{ display: block; width: auto;  padding: 0px 5px; padding-bottom: 3px; 
+		font-size: 22px; text-decoration: none; color: #fff;   }
+		
+
+		nav ul li a > span {  display: inline-block; float: left; line-height: 30px; margin-left: 5px; }
+	    nav ul li a:hover { color: #D22042!important; }
+		
+.social-link  ul{ margin:0;  }
+.social-link ul li {  margin-left: 5px;   float: left;  text-align: center;   display: block; }
+.social-link ul li a span { display: none;  }
+.social-link ul li a { width: 32px; height: 32px;  display: block;  transition: all 0.3s ease;  }
+	.social-link ul li a.twitter { background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -13px -6px; }
+	.social-link ul li a.facebook { background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -58px -6px; }
+	.social-link ul li a.googleplus { background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -144px -6px; }
+	
+	.social-link ul li a.twitter:hover { background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -13px -44px;   }
+	.social-link ul li a.facebook:hover { background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -58px -44px; }
+	.social-link ul li a.googleplus:hover { background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -144px -44px; }
+ 
+
+
+
+.overlay_tuitear { overflow: auto; display: none; position: absolute; top:0; left: 0; width: 100%; height: 100%; z-index: 120; background: rgba(0,0,0,0.5);  }
+.overlay_tuitear.desplegado { display: block;  }
+.overlay_contenedor {   position: fixed;
+						max-width: 500px;
+						min-width: 500px;
+						background: #fff;
+						margin: 0 auto; 
+						overflow: auto;
+						bottom: 0;
+						right: 0; }
+.nuevo_tweet { background: #d22042; color: #fff; padding: 10px 20px; } .nuevo_tweet p { margin: 0; line-height: 30px; }
+.form_tweet { padding: 20px; padding-top: 20px; overflow: auto; }
+
+.close_tuitear { display: block; position: absolute; right: 18px; top: 10px; font-size: 30px; line-height: 30px; cursor: pointer; }
+.nuevo_tablon_wrapper { background: #d22044; color: #fff; margin-bottom: 20px; display: none; }
+.nuevo_tablon_wrapper.desplegado {  }
+
+#nuevo_hashtag::-webkit-input-placeholder { /* WebKit browsers */
+    color:    rgba(255,255,255,0.5);
+}
+#nuevo_hashtag:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    rgba(255,255,255,0.5);
+    opacity:  1;
+}
+#nuevo_hashtag::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    rgba(255,255,255,0.5);
+    opacity:  1;
+}
+#nuevo_hashtag:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    rgba(255,255,255,0.5);
+}
+
+
+#nuevo_hashtag { background: none;
+color: #fff;
+border: none;
+border-bottom: 2px solid #fff;
+font-size: 30px;
+line-height: 130%;
+padding: 0px 10px;
+height: auto;
+margin-bottom: 10px;
+display: inline-block; }
+
+input#nuevo_hashtag::after { content: "hola";  }
+
+
+
+/*GRID TWEETS*/
+
+.grid.oculta { opacity: 0; }
+.grid { width: 100%!important; max-width:1180px; }
+
+.twcard * {  
+	transition: all 0.4s ease;
+}
+.twcard, .timeline, .boardcard { 
+	border-top: 4px solid #D22042;
+	position: relative;  
+	padding-bottom: 25px;
+    background: #fff;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	font-size: 18px; line-height: 21px; 
+	margin-bottom: 20px;
+	width: auto;
+}
+
+.boardcard {  padding-bottom: 10px; padding-top: 10px;    }
+.boardcard p, .boardcard h2 {  margin-bottom: 5px; padding:0px 10px; }
+.boardcard img { margin: 0 auto; display: block; }
+.columns .twcard  { width: 100%; padding-bottom: 40px;  }
+
+.twcard_full {width: 100%;  }
+
+.twcard.s1 { min-height: 287px;  }
+.twcard.s2, .twcard.s3 { height: 120px;  }
+.twcard.s4, .twcard.s5 { min-height: 155px;  }
+.twcard.s6 { border-top: none; }
+.twcard.s1 p { font-size: 25px; line-height: 28px;  }
+.twcard.s2 p { font-size: 18px; line-height: 21px;  padding: 10px;  }
+.twcard.s3 p { font-size: 18px; line-height: 21px; padding: 10px;  }
+.twcard.s4 p, .twcard.s5 p { font-size: 15px; line-height: 18px;  padding: 10px; }
+.twcard.s6 p { font-size: 14px; line-height: 18px; padding: 5px 0px; }
+
+.twcard.s6 .user_name{  width: 110px; overflow: hidden; display: inline-block; text-overflow: ellipsis; }
+
+
+.twcard.oculto { display:none; }
+
+#ver_mas {  margin-top: 50px; margin-bottom: 50px; }
+/*Controles bajo tuit*/	
+.twcard .user { width: auto;  height: 40px; display: inline-block; float: left; }
+.user_name , a.user_name:visited { 
+	color: #fff;
+	margin-left: 15px;
+	line-height: 40px;
+	vertical-align: top;
+	font-size: 14px;
+}
+.user_name:hover { color: #FFCB0F; }
+.user_perfil .avatar {  max-height: 40px; }
+.twcard p{ font-size: 20px; line-height: 25px; padding: 10px; 
+  margin-bottom: 10px; -moz-hyphens:auto; -ms-hyphens:auto; -webkit-hyphens:auto; -o-hyphens:auto; hyphens:auto; word-wrap:break-word;}
+.twcard.s6 p  { margin-bottom: 5px; min-height: 105px; padding: 10px; }
+.twcard p a {  color: #0F9BFF; } .twcard p a:hover {  color: #48AEF7; }
+.twcontrols { background: #666; width: 100%; height: auto; position: absolute; bottom: 0; text-align: center;
+}
+
+.twcontrols * { float: left; }
+.twcontrols .control { float: right; }
+.twcontrols .control a { width: 30px; display: inline-block;  height: 30px;    color: #fff; padding: 5px; text-align: center;   text-indent: -9999px; cursor: pointer; }
+
+.twcontrols .fav { background: #666 url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) 3px 4px; }
+.twcontrols .fav.true { background-position:3px -28px; }
+.twcontrols .rt { background: #666 url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) -29px 3px; }
+.twcontrols .rt.true { background-position: -29px -28px; }
+.twcontrols .save { background: #666 url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) -59px 1px; }
+
+.twcontrols span.fav:hover { background: #333 url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) 1px 1px; }
+.twcontrols span.rt:hover { background: #333 url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) -29px 1px; }
+.twcontrols span.save:hover { background: #333 url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) -59px 1px; }
+
+.twcontrols span:hover {   } 
+/*FIN Controles bajo tuit*/	
+
+
+
+
+
+/*Estilo de botones*/
+input.btn { border: none; color: #fff!important; font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;  font-weight: normal; }
+
+.btn { background:#333; color: #fff!important; border-radius: 2px; padding: 5px 15px; text-align: center; display: inline-block;   margin: 5px 0px; margin-right: 5px; box-sizing: border-box; font-size: 18px; }
+.btn:hover { background: #696969; color: #fff; }
+.uppercase { text-transform: uppercase; }
+.btn.wfull { width: 100%; margin:5px 0px;  }
+.btn.min300 { min-width: 300px; }
+.btn.right {  float: right; margin-left: 5px; margin-right: 0; max-width: 100%; }
+.btn.center { clear: both; float: none; margin: 5px auto; display: block; max-width: 380px; }
+.btn.h45 { padding: 10px; }
+
+
+
+.btn.yellow { background: #FFCB0F; }
+.btn.yellow:hover { background: #FFD53F; }
+
+
+.btn.blue { background: #00ACED; }
+.btn.blue:hover { background: #33BDF1; }
+
+.btn.crimson { background: #D22042; }
+.btn.crimson:hover { background: #D63655; }
+.btn.crimson.border { color: #D22042!important; }
+.btn.crimson.border:hover { color: #FFF!important; }
+
+.btn.white { background: #FFF; }
+.btn.white:hover { background: #F7f7f7; }
+.btn.white.border { color: #FFF!important; }
+.btn.white.border:hover { color: #FFF!important; }
+
+.btn.border { background: none; border:2px solid #333; color: #333; }
+.btn.border:hover { background: #333; color: #fff; }
+
+
+
+
+.btn.border.yellow { border-color: #FFCB0F; color: #FFCB0F;  }
+.btn.border.yellow:hover { background: #FFCB0F; color: #fff; }
+
+.btn.border.blue { border-color: #00ACED; color: #00ACED;  }
+.btn.border.blue:hover { background: #00ACED; color: #fff; }
+
+.btn.border.crimson { border-color: #D22042; color: #D22042;  }
+.btn.border.crimson:hover { background: #D22042; color: #fff; }
+
+
+
+.btn.border.white { border-color: #FFF; color: #FFF;  }
+.btn.border.white:hover { background: #FFF; color: #333!important; }
+
+
+.btn.big { font-size: 30px; line-height: 45px; padding: 10px 20px;} 
+.btn.nomargin  { margin: 0; }
+
+
+.btn.bigger { background: #fff; color: inherit;
+border: 2px solid #666;
+color: #333!important;
+border-radius: 15px;
+padding: 10px 40px;
+font-size: 22px;
+margin-right: 5px; }
+
+
+.twcard .btn, .timeline .btn, .boardcard  .btn { display: block; margin: 4px 10px; }
+
+/*fin Estilo de botones*/
+
+
+
+.icon_tuitear,  .icon_tablon , .icon_exit { display: inline-block;
+		float: left;
+		width: 30px;
+		height: 30px; margin-left: 10px; transition: all 0.25s ease; -moz-transition: all 0.25s ease; }
+.icon_tuitear {
+		
+		background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -103px -5px;
+}
+
+.icon_tablon {
+		background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -138px -5px;
+}
+
+ 
+
+.icon_exit {
+background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -206px -5px;
+}
+
+
+nav ul li:hover .icon_tuitear, nav ul li:hover  .icon_tablon , nav ul li:hover  .icon_exit {
+	background-position-y: -37px; 
+}
+
+
+/* PERFIL DE USUARIO */
+
+
+.profile_content  { margin-top: 40px;
+	border-top: 6px solid #d22042; 
+    background: #fff;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.user_twitter_numbers { overflow: auto;   background:#d22042;  padding: 4px 10px;}
+
+.user_twitter_profile {   padding: 10px;    /* display: inline-block; */    padding-bottom: 3px;}
+.pr_image { max-width: 13%; margin-right: 2%; display: inline-block; }
+.profile_text { display: inline-block;  width: auto; max-width: 84%; vertical-align: top;}
+.pr_name, .pr_nickname {  
+line-height: 26px;
+font-size: 26px;
+color: #252525;
+margin-bottom: 0;
+display: inline-block;
+margin-right: 15px;  }
+.pr_bio {font-size: 15px;
+line-height: 150%;
+margin: 0px;}
+
+.count_tweets, .count_following , .count_followers { display: inline-block; color: #fff; margin-right: 10px; }
+.pr_label { font-size: 14px; clear: right;  }
+.pr_count { font-size: 20px;  }
+
+.gatillo { 
+	cursor: pointer;
+	right: 10px;
+	bottom: -33px;
+	display: block;
+	width: auto;
+	position: absolute;
+	background: #bbb;
+	padding: 5px 20px;
+	border-radius: 0px 0px 12px 12px; color: #fff; }
+
+.gatillo:hover {  background: #FFCB0F;   }
+
+.gatillo .gatillo_row { 
+display: inline-block;
+float: left;
+width: 20px;
+height: 20px;
+background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat  -39px -68px;
+ }
+
+.gatillo.desplegado .gatillo_row { 
+	display: inline-block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background-position: -25px -70px;
+}
+
+.gatillo .gatillo_search { 
+		display: inline-block;
+		float: left;
+		width: 20px;
+		height: 20px;
+		background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -7px -70px;
+}
+
+
+.gatillo .gatillo_texto {  display: inline-block;
+float: left; line-height: 20px;
+margin: 0px 5px;  }
+
+/* Instantter */
+	
+	/* Landpage*/
+
+.crimson_cont { background: #D22042; padding: 30px 0px; text-align: center; color:#FFF!important; }
+.crimson_cont h1 { color: #fff; font-size: 150px; line-height: 160px; }
+.crimson_cont h2 { color: #fff; font-size: 50px; line-height: 60px;  }
+.crimson_cont p { color: #fff; font-size: 25px; line-height: 35px; max-width: 800px; margin: 0 auto; }
+
+
+#vermas { padding: 60px 0px; }
+#vermas h1{  font-size: 60px; line-height: 70px;  color: #D22042!important;   }
+#vermas h2{  font-size: 45px; line-height: 55px;     }
+#vermas p{  font-size: 21px; line-height: 30px;  }
+
+#vermas img.center  { display: block; margin: 30px auto; }
+
+.footer_landpage  { background: #282828; color: #fff; padding-bottom: 100px;  }
+.footer_landpage h4 { color: #fff; }
+.footer_landpage a { color: #fff; }
+.footer_landpage p { font-size: 20px; line-height: 30px; }
+.footer_landpage a:hover { color: #D22042; }
+.footer_landpage ul li{ margin: 0;  }
+
+
+
+/* FIN Instantter */
+
+.column ul, .columns ul  { margin-left: 10px; margin-right:10px;   }
+.clear { clear:both; width:100%; min-height:2px; }
+
+
+/* #Media Queries
+================================================== */
+
+	
+
+	/* Anything smaller than standard 1199 */
+	@media only screen and (max-width: 1199px) {
+		/* Instantter */
+			
+			/* Landpage*/
+
+		.crimson_cont {  padding: 20px 0px;  }
+		.crimson_cont h1 {  font-size: 120px; line-height: 130px; }
+		.crimson_cont h2 { font-size: 30px; line-height: 40px;  }
+		#vermas h1{  font-size: 50px; line-height: 60px;   }
+		#vermas h2{  font-size: 35px; line-height: 45px; }
+	}
+	
+	/* Anything smaller than standard 960 */
+	@media only screen and (max-width: 959px) {
+
+
+	}
+	
+	
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+		#page:not(.landpage) { padding-top: 40px; }
+		.container { width: 100%; }
+		.container .column,  .container .columns { width: 92%!important;
+		margin-left: 4%; }
+
+		#logo{  font-size: 30px; line-height: 30px;  }
+			
+		.logo_cont {   margin-left: 4%; }
+		.gatillo_menu { display: inline-block; width: 32px; height: 30px; 
+			background: url(http://instantter-107384.euw1-2.nitrousbox.com/images/sprite.png) no-repeat -4px -90px; float: right; margin-right: 4%; margin-top:2px; cursor: pointer; }
+		.close_menu {
+			display: block;
+			text-align: center;
+			padding: 10px;
+			line-height: 38px;
+			color: #FFCB0F;
+			font-size: 24px;
+			cursor: pointer;
+		}
+
+		.gatillo { right: 4%; }
+		header { padding-bottom: 6px; }
+		nav.right.columns  { transition: all 0.4s linear;  display: none; position: fixed; top: 0; right:-150px; width: 150px!important; height: 100%; background: #353535; margin-top: 0!important; }
+		nav.right.columns.desplegado { transition: all 0.4s linear; right:0;  display: block;  margin: 0; }
+		nav ul li { border-bottom: 1px solid #fff; padding-bottom: 10px; margin-bottom: 10px; width: 130px; }
+		nav ul li a { overflow: auto; }
+		nav ul li a > span { display: block; clear: both; float: none; margin: 0 auto;    }
+		
+		.icon_tuitear, .icon_perfil, .icon_rss, .icon_exit {  
+			display: block;
+			margin: 6px auto;
+			float: none; }
+
+		img.percent90 { max-width: 100%; }
+
+		.grid, .twcard {width: 100%!important;  }
+		
+		 .pr_image { text-align: center; display: block; max-width: 100%; width: auto; margin-bottom: 10px;  }
+		.pr_name, .pr_nickname, .pr_bio {  margin-bottom: 10px;   }
+		.profile_text{ display: block; width: auto; max-width: initial; }
+		.profile_content .btn { display: none; }
+		
+		/* Instantter */
+			
+			/* Landpage*/ 
+		.crimson_cont h1 {  font-size: 100px; line-height: 110px; }
+		.crimson_cont h2 { font-size: 21px; line-height: 30px;  }
+		.crimson_cont p { font-size: 18px; line-height: 28px;  }
+		
+
+
+	}
+
+	
+	/* Anything smaller than standard 480 */
+	@media only screen and (max-width: 480px) {
+		.btn.min300 { min-width:100%;  }
+
+		/* Instantter */
+			
+			/* Landpage*/ 
+		.crimson_cont h1 {  font-size: 55px; line-height: 65px; }
+		.crimson_cont h2 { font-size: 20px; line-height: 30px;  }
+		.crimson_cont p { font-size: 16px; line-height: 26px;  }
+	}
+
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+
+	 .header_social li a.social_icon.tw, .header_social li a.social_icon.tw:hover , .header_social li a.social_icon.fb , .header_social li a.social_icon.fb:hover, .header_social li a.social_icon.gplus, .header_social li a.social_icon.gplus:hover, a.call:hover , a.call{
+		/* Reference the @2x Sprite */
+		background-image: url(sprite@2x.png);
+		/* Translate the @2x sprite's dimensions back to 1x */
+		background-size: 300px 300px; 
+	}
+
+	.home .trigger_menu { background:  #4BAA2A url(sprite@2x.png) 0px -98px; background-size: 300px 300px; }
+}
+
+
+.opaco{
+ width: 80%;
+ margin: 0 auto;
+ padding:0px 10px 0px 10px;
+ border-radius: 0px 0px 8px 8px;
+ border: 1px solid black;
+ /*background-color: #FFFFFF;*/
+ /*opacity: 0.8; NO QUEREMOS UN CONTENEDOR TRANSPARENTE */
+ /* queremos un contenedor con fondo transparente */
+ background-color: rgba(255,255,255,0.8); /*Fondo color blanco al 80%*/
+ min-height: 300px; 
+ margin-bottom: 25px;
+ z-index: 2;
+
+}
+
+
+/* SALVATTORE */
+#grid { overflow: auto; }
+#grid[data-columns]::before {
+	content: '4 .column-grid.size-1of4';
+}
+
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }
+.size-1of4 { width: 25%; }
+.size-1of5 { width: 20%; }
+
+/* These are the classes that are going to be applied: */
+.column-grid { float: left; padding: 10px; box-sizing: border-box;  -moz-box-sizing: border-box; }
+.column-grid > div {   }
+
+@media screen and (max-width: 480px){
+    #grid[data-columns]::before {
+        content: '1 .column-grid.size-1of1';
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #grid[data-columns]::before {
+        content: '1 .column-grid.size-1of1';
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 959px) {
+    #grid[data-columns]::before {
+        content: '2 .column-grid.size-1of2';
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+    #grid[data-columns]::before {
+        content: '3 .column-grid.size-1of3';
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #grid[data-columns]::before {
+        content: '4 .column-grid.size-1of4';
+    }
+}
+/* 
+* Skeleton V1.0.3
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 7/17/2011
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid    
+    #Tablet (Portrait)
+    #Mobile (Portrait) 
+    #Mobile (Landscape)
+    #Clearing */
+    
+ /* 1200px Media Query for the Skeleton Grid - http://getskeleton.com 
+*  Adapted from http://www.aliaspooryorik.com/blog/index.cfm/e/posts.details/post/responsive-css-grid-systems-345
+*  Added .alpha.omega combo classes. Hope to see that fixed in later versions of Skeleton: https://github.com/dhgamache/Skeleton/issues/68
+*/
+
+
+
+	    .container                                  { position: relative; width: 1200px;   margin: 0 auto; padding: 0; }
+		.container .column,
+		.container .columns                         { float: left; display: inline; margin: 10px 10px; }
+		.row                                        { margin-bottom: 20px; }
+		
+		.container .column.left, .container .columns.left  { float: left; }
+		.container .column.right, .container .columns.right   { float: right; }
+		.container .column .salto {  clear:both; height: 2px; }
+		
+	    .column.alpha, .columns.alpha   { margin-left: 0; margin-right: 10px; }
+	    .column.omega, .columns.omega   { margin-right: 0; margin-left: 10px; }
+            .column.alpha.omega, .columns.alpha.omega {margin-left: 0; margin-right: 0}
+
+	    .container .one.column          { width: 55px; }
+	    .container .two.columns         { width: 130px; }
+	    .container .three.columns       { width: 205px; }
+	    .container .four.columns        { width: 280px; }
+        .container .grid .four.columns  { width: 278px; }
+	    .container .five.columns        { width: 355px; }
+	    .container .six.columns         { width: 430px; }
+	    .container .seven.columns       { width: 505px; }
+	    .container .eight.columns       { width: 580px; }
+	    .container .nine.columns        { width: 655px; }
+	    .container .ten.columns         { width: 730px; }
+	    .container .eleven.columns      { width: 805px; }
+	    .container .twelve.columns      { width: 880px; }
+	    .container .thirteen.columns    { width: 955px; }
+	    .container .fourteen.columns    { width: 1030px; }
+	    .container .fifteen.columns     { width: 1105px; }
+	    .container .sixteen.columns     { width: 1180px; }
+
+	    .container .one-third.column    { width: 380px; }
+	    .container .two-thirds.column   { width: 780px; }
+
+	    /* Offsets */
+	    .container .offset-by-one       { padding-left: 75px; }
+	    .container .offset-by-two       { padding-left: 150px; }
+	    .container .offset-by-three     { padding-left: 225px; }
+	    .container .offset-by-four      { padding-left: 300px; }
+	    .container .offset-by-five      { padding-left: 375px; }
+	    .container .offset-by-six       { padding-left: 450px; }
+	    .container .offset-by-seven     { padding-left: 525px; }
+	    .container .offset-by-eight     { padding-left: 600px; }
+	    .container .offset-by-nine      { padding-left: 675px; }
+	    .container .offset-by-ten       { padding-left: 750px; }
+	    .container .offset-by-eleven    { padding-left: 825px; }
+	    .container .offset-by-twelve    { padding-left: 900px; }
+	    .container .offset-by-thirteen  { padding-left: 975px; }
+	    .container .offset-by-fourteen  { padding-left: 1050px; }
+	    .container .offset-by-fifteen   { padding-left: 1125px; }
+
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+	 @media only screen and (min-width: 959px) and (max-width: 1199px)  {
+	
+    .container                                  { width: 960px; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin: 10px 10px; }
+    .row                                        { margin-bottom: 20px; }
+	
+	.container .column .left { float: left; }
+	.container .column.right { float: right; }
+	.container .column .salto {  clear:both; height: 2px; }
+	
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns                     { width: 40px;  }
+    .container .two.columns                     { width: 100px; }
+    .container .three.columns                   { width: 160px; }
+    .container .four.columns                    { width: 220px; }
+    .container .five.columns                    { width: 280px; }
+    .container .six.columns                     { width: 340px; }
+    .container .seven.columns                   { width: 400px; }
+    .container .eight.columns                   { width: 460px; }
+    .container .nine.columns                    { width: 520px; }
+    .container .ten.columns                     { width: 580px; }
+    .container .eleven.columns                  { width: 640px; }
+    .container .twelve.columns                  { width: 700px; }
+    .container .thirteen.columns                { width: 760px; }
+    .container .fourteen.columns                { width: 820px; }
+    .container .fifteen.columns                 { width: 880px; }
+    .container .sixteen.columns                 { width: 940px; }
+
+    .container .one-third.column                { width: 300px; }
+    .container .grid .four.columns              { width: 300px; }
+    .container .two-thirds.column               { width: 620px; }
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 60px;  }
+    .container .offset-by-two                   { padding-left: 120px; }
+    .container .offset-by-three                 { padding-left: 180px; }
+    .container .offset-by-four                  { padding-left: 240px; }
+    .container .offset-by-five                  { padding-left: 300px; }
+    .container .offset-by-six                   { padding-left: 360px; }
+    .container .offset-by-seven                 { padding-left: 420px; }
+    .container .offset-by-eight                 { padding-left: 480px; }
+    .container .offset-by-nine                  { padding-left: 540px; }
+    .container .offset-by-ten                   { padding-left: 600px; }
+    .container .offset-by-eleven                { padding-left: 660px; }
+    .container .offset-by-twelve                { padding-left: 720px; }
+    .container .offset-by-thirteen              { padding-left: 780px; }
+    .container .offset-by-fourteen              { padding-left: 840px; }
+    .container .offset-by-fifteen               { padding-left: 900px; }
+
+}
+    
+    
+/* #Tablet (Portrait)
+================================================== */   
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container                                  { width: 768px; }
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+    
+        .container .one.column                      { width: 28px; }
+        .container .two.columns                     { width: 76px; }
+        .container .three.columns                   { width: 124px; }
+        .container .four.columns                    { width: 172px; }
+        .container .five.columns                    { width: 220px; }
+        .container .six.columns                     { width: 268px; }
+        .container .seven.columns                   { width: 316px; }
+        .container .eight.columns                   { width: 364px; }
+        .container .grid .four.columns              { width: 360px; }
+        .container .nine.columns                    { width: 412px; }
+        .container .ten.columns                     { width: 460px; }
+        .container .eleven.columns                  { width: 508px; }
+        .container .twelve.columns                  { width: 556px; }
+        .container .thirteen.columns                { width: 604px; }
+        .container .fourteen.columns                { width: 652px; }
+        .container .fifteen.columns                 { width: 700px; }
+        .container .sixteen.columns                 { width: 748px; }
+        
+        .container .one-third.column                { width: 236px; }
+        .container .two-thirds.column               { width: 492px; }
+        
+        /* Offsets */   
+        .container .offset-by-one                   { padding-left: 48px; }
+        .container .offset-by-two                   { padding-left: 96px; }
+        .container .offset-by-three                 { padding-left: 144px; }
+        .container .offset-by-four                  { padding-left: 192px; }
+        .container .offset-by-five                  { padding-left: 240px; }
+        .container .offset-by-six                   { padding-left: 288px; }
+        .container .offset-by-seven                 { padding-left: 336px; }
+        .container .offset-by-eight                 { padding-left: 348px; }
+        .container .offset-by-nine                  { padding-left: 432px; }
+        .container .offset-by-ten                   { padding-left: 480px; }
+        .container .offset-by-eleven                { padding-left: 528px; }
+        .container .offset-by-twelve                { padding-left: 576px; }
+        .container .offset-by-thirteen              { padding-left: 624px; }
+        .container .offset-by-fourteen              { padding-left: 672px; }
+        .container .offset-by-fifteen               { padding-left: 720px; }
+    }
+    
+    
+/*  #Mobile (Portrait) 
+================================================== */
+    
+    /* Note: Design for a width of 320px */
+    
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .container .columns, .container .column { margin: 10px 0; }
+        
+        .container .one.column,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns, 
+        .container .one-third.column, 
+        .container .two-thirds.column  { width: 300px; }
+        
+        /* Offsets */   
+        .container .offset-by-one,              
+        .container .offset-by-two,                  
+        .container .offset-by-three,                
+        .container .offset-by-four,                     
+        .container .offset-by-five,                     
+        .container .offset-by-six,                  
+        .container .offset-by-seven,                
+        .container .offset-by-eight,                
+        .container .offset-by-nine,                     
+        .container .offset-by-ten,                  
+        .container .offset-by-eleven,               
+        .container .offset-by-twelve,               
+        .container .offset-by-thirteen,             
+        .container .offset-by-fourteen,             
+        .container .offset-by-fifteen { padding-left: 0; }          
+                
+    }    
+    
+    
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+    
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .columns, .container .column { margin: 10px 0px; }
+        
+        .container .one.column,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column, 
+        .container .two-thirds.column { width: 420px; }
+        .container .grid .four.columns { width: 100%; }
+    }
+     
+    
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; } 
+    
+    /* Use clearfix class on parent to clear nested columns, 
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row, 
+    .clearfix {
+      zoom: 1; }
+      
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+    
+    
+    
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

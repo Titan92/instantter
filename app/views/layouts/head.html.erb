@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="UTF-8">
+	<title>Instantter</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	 <%= csrf_meta_tags %>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
+
+	<!-- CSS
+  ================================================== -->
+	<%= stylesheet_link_tag "base", media: "all", "data-turbolinks-track" => true %>
+	<%= stylesheet_link_tag "skeleton", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "layout", media: "all", "data-turbolinks-track" => true %>
+  	
+	<!-- Favicons
+	================================================== -->
+	
+	<!-- Scripts
+	================================================== -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  	<%= javascript_include_tag "application", "data-turbolinks-track" => true %> 
+
+  
+  <!-- CODIGO DE ANALYTICS -->
+	 
+<script>
+
+</script>
+</head>
+<body data-no-turbolink>
+	<div id="page" <% if @landpage %> class="landpage" <% end %>>
+		<% if !@landpage %><%= render template: "layouts/header" %><% end %>
+		

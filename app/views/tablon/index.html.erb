@@ -1,0 +1,35 @@
+	<section class="container">
+	 <div class="twcard_full"></div>
+	 <div class="sixteen columns"><h1>#<%= @hashtag_tablon %></h1></div>
+	  <div class="clear"></div>
+	  <div class="loading sixteen columns">
+	  	<p class="center btn border big crimson">Cargando</p>
+	  </div>
+	  <div id="grid" data-columns>
+			  <% if @tablon.count == 0  %>
+	            <p>No hay Tweets</p>
+	          <% else %>
+	            <% @tablon.each do |tweet| %>
+	              <div class="twcard">
+					<%= image_tag(tweet.imagenes[0]["media_url"], :size => tweet.imagenes[0]["sizes"]["thumb"], :class => 'scale-with-grid') if(tweet.imagenes.present?) %>
+					<%= image_tag(tweet.url_instagram, :class => 'scale-with-grid') if(tweet.url_instagram.present?) %> 
+		        	<p>
+		        		
+		        		<%= tweet.texto.html_safe %>
+		        	</p> 
+		        		
+		        	
+		         </div>
+	             <% end %>
+	          <% end %>
+	  </div>
+	  
+	</section>
+
+	<script>
+		var change = true;
+		$(document).ready(function(){
+			 setTimeout(function(){  },400);
+			 setTimeout(function(){$('.loading').slideUp('fast'); $('.grid').removeClass('oculta');  $(window).trigger('resize'); },800);
+		}); 
+	</script>

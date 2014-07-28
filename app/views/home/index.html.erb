@@ -1,0 +1,45 @@
+      <section>
+            <div class="container">
+                <div class="three columns"></div>
+                <div class="ten columns profile_content">
+                  <div class="user_twitter_profile">
+                    <%= image_tag @img_usuario, class: 'pr_image', title: @usuario %>
+                    <div class="profile_text">
+                      <p class="pr_name"><%= @nombre %></p>
+                      <p class="pr_nickname"><a href="http://twitter.com/<%= @usuario %>" target="_blank">@<%= @usuario %></a></p>
+                      <p class="pr_bio"><%= @descripcion %></p>
+                    </div>
+                  </div>
+                  <div class="user_twitter_numbers">
+                    <div class="count_tweets">
+                      <span class="pr_label">Tweets</span>
+                      <span class="pr_count"><%= @tuits %></span>
+                    </div>
+                    <div class="count_following">
+                      <span class="pr_label">Siguiendo</span>
+                      <span class="pr_count"><%= @following %></span>
+                    </div>
+                    <div class="count_followers">
+                      <span class="pr_label">Seguidores</span>
+                      <span class="pr_count"><%= @followers %></span>
+                    </div>
+
+                     <a href="http://twitter.com/<%= @usuario %>" target="_blank" class="btn white border uppercase right">Perfil completo</a>
+                  </div>
+                </div>
+                <div class="three columns"></div>
+                <div class="sixteen columns">
+                  <h1>Mis tablones</h1>
+                </div>
+
+                <div class="grid_board tablones">
+                      <%= render template: "layouts/tablones" %>
+                </div>
+                <!--<div class="sixteen columns">
+                  <h1>Tablones públicos</h1>
+                </div>
+                <div class="sixteen columns">
+                  <h1>Tablones colaborativos</h1>
+                </div>-->
+            </div>
+          </section>

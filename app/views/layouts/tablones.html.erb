@@ -1,0 +1,13 @@
+                      <% @tablones.each do |tablon| %>
+                          <a href="/tablon/<%= tablon["hashtag"] %>"><div class="four columns boardcard">
+                          <p class="board_hashtag">#<%=  tablon["hashtag"] %></p>
+                          <p><%= tablon["fecha"] %></p>
+                          <p><%= tablon["publicaciones"] %> publicaciones</p>
+                          <span class="borrar_tablon">x</span>
+                        </div></a>
+                      <% end %>
+                      <div class="four columns boardcard">
+                          <!--<input id="btn_nuevo_hashtag" name="btn_nuevo_hashtag" placeholder="hashtag" type="text">
+                          <input class="btn right border crimson" id="btn_crear_tablon" name="commit" type="submit" value="Crear">-->
+                          <a href="javascript:void(0)" id="btn_nuevo_tablon" class="btn big border center uppercase crimson">añadir</a>
+                      </div>

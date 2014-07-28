@@ -1,0 +1,33 @@
+	<header>    
+    <div class="container">
+        <div class="logo_cont">
+          <a href="/home" id="logo">Instantter</a>
+        </div>
+      <span class="gatillo_menu"></span>
+        <nav class="right columns">
+            <span class="close_menu">X</span>
+            <ul>           
+              <li><a class="trigger_tweet" href='javascript:void(0)'><span>Tuitear</span><span class="icon_tuitear"></span></a></li>
+              <li><a class="trigger_nuevo_tablon" href='javascript:void(0)'><span>Nuevo tablón</span><span class="icon_tablon"></span></a></li>
+              <li><a href='/logout'><span>Salir</span><span class="icon_exit"></span></a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <div class="nuevo_tablon_wrapper">
+    <div class="container">
+      <div class="six columns">
+        <p class="title_h1 colorwhite">Nuevo tablón</h1>
+        <p>Crea un nuevo tablón definiendo un hashtag</p>
+      </div>
+      <div class="ten columns">
+      <div class="buscador_input">
+        <input id="nuevo_hashtag" name="nuevo_hashtag" placeholder="hashtag" type="text" style="visibility: visible;">
+      </div>
+      <div id="error"></div>
+      <div class="buscador_submit">
+        <input class="btn min300 right border white" id="crear_tablon" name="commit" type="submit" value="Crear">
+      </div>
+    </div>
+    </div>
+  </div>
